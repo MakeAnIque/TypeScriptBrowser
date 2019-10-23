@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/amitabh-anandcl/TypeScriptBrowser/issues"
   },
-  "homepage": "https://github.com/amitabh-anandcl/TypeScriptBrowser#readme"
+  "homepage": "https://github.com/amitabh-anandcl/TypeScriptBrowser#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
