@@ -1,0 +1,5 @@
+node_modules
+
+static_file/typescript.min.js
+
+dist

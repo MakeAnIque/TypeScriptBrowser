@@ -1,0 +1,22 @@
+{
+  "name": "typescriptbrowser",
+  "version": "1.0.0",
+  "description": "run typescript code direct in browser with loaded typescript compiler in browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitabh-anandcl/TypeScriptBrowser.git"
+  },
+  "keywords": [
+    "ts-browser"
+  ],
+  "author": "amitabh anand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amitabh-anandcl/TypeScriptBrowser/issues"
+  },
+  "homepage": "https://github.com/amitabh-anandcl/TypeScriptBrowser#readme"
+}
