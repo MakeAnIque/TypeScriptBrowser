@@ -31,6 +31,24 @@ $ cd TypeScriptBrowser
 $ npm install
 ```
 
+-   `gulp clean` clean build folder
+
+```sh
+$ gulp clean
+```
+
+-   `gulp compress` compress the typescript.ts file
+
+```sh
+$ gulp compress
+```
+
+-   `gulp` this default development compile and merge
+
+```sh
+$ gulp
+```
+
 -   `dist` folder has all script folder that is client side folder and middleware file
 
 ```sh
