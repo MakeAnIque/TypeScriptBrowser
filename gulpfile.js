@@ -25,7 +25,7 @@ gulp.task("compress", (cb) => {
 gulp.task("create_file", (cb) => {
     console.log(chalk.green("File main.js created ..."));
     fs.writeFileSync(
-        __dirname + "/dist/js/main.js",
+        __dirname + "/dist/js/static_file.js",
         "file created start now..."
     );
 

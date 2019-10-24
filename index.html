@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="ts"></div>
+
+        <script type="text/javascript" src="/static/js/typescript.js"></script>
+        <script type="text/javascript" src="/static/js/static_file.js"></script>
+        <script type="text/javascript">
+            window.onload = () => {
+                let url_config = {
+                    fetch_url: "/ts_static",
+                    ts_file: ["index.ts", "main.ts"],
+                    inject_id: "ts"
+                };
+                let ts_now = new load_typescript(url_config);
+            };
+        </script>
+    </body>
+</html>
