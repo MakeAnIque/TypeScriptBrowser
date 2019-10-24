@@ -1,9 +1,6 @@
 #node module will installed according to your system
 node_modules
 
-# this is cutom ts file for test only not for productor you can create your own file ts and server over the server
-ts
-
 #build folder will build by you on dev so use gulp file
 build
 
