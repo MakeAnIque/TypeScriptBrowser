@@ -2,6 +2,7 @@ const express = require("express");
 const chalk = require("chalk");
 const path = require("path");
 
+// load miidleware which check only ts file will come
 const { ts_middleware } = require("./dist/middleware_ts");
 
 const app = express();
