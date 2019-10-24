@@ -1,5 +1,8 @@
 const express = require("express");
 const chalk = require("chalk");
+const path = require("path");
+
+const { ts_middleware } = require("./dist/middleware_ts");
 
 const app = express();
 
@@ -9,10 +12,8 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-app.post("/ts_static", (req, res) => {
-    console.log("okay fetched");
-    // console.log(req.query.q);
-    res.sendFile(__dirname + "/ts/" + req.query.q);
+app.post("/ts_static", ts_middleware.check_req, (req, res) => {
+    res.sendFile(path.join(__dirname, "ts", req.query.q));
 });
 
 app.listen(8000, () => {
