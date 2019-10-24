@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 
 // this is main function that load file and to client
 app.post("/ts_static", ts_middleware.check_req, (req, res) => {
+    // this is 'ts' it is path where you want to store your ts file you can change according to you project file
     res.sendFile(path.join(__dirname, "ts", req.query.q));
 });
 
