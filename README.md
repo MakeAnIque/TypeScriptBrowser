@@ -75,6 +75,7 @@ dist/js/typescript.js  - typescript.js compiler minified that compile ts into js
         <div id="ts"></div>
 
         <script type="text/javascript" src="/static/js/typescript.js"></script>
+        <!-- this is removed when production level build only typescript.js loaded and then load_typescript must call this -->
         <script type="text/javascript" src="/static/js/static_file.js"></script>
         <script type="text/javascript">
             // this is function example and
