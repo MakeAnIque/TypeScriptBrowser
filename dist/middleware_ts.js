@@ -4,6 +4,12 @@ class middleware {
     constructor() {
         console.log("okay middleware");
     }
+    /**
+     * check mime of incomming request for tpyescript file
+     * @param {*} req
+     * @param {*} res
+     * @param {*} next
+     */
     check_req(req, res, next) {
         let mime = req.query.q;
 

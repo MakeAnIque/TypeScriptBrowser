@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
+// this is main function that load file and to client
 app.post("/ts_static", ts_middleware.check_req, (req, res) => {
     res.sendFile(path.join(__dirname, "ts", req.query.q));
 });
