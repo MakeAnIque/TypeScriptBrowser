@@ -1,34 +1,35 @@
 {
-  "name": "typescriptbrowser",
-  "version": "1.0.0",
-  "description": "run typescript code direct in browser with loaded typescript compiler in browser",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amitabh-anandcl/TypeScriptBrowser.git"
-  },
-  "keywords": [
-    "ts-browser"
-  ],
-  "author": "amitabh anand",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amitabh-anandcl/TypeScriptBrowser/issues"
-  },
-  "homepage": "https://github.com/amitabh-anandcl/TypeScriptBrowser#readme",
-  "devDependencies": {
-    "eslint": "^6.5.1",
-    "gulp": "^4.0.2"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "express": "^4.17.1",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglify-es": "^2.0.0",
-    "readable-stream": "^3.4.0",
-    "rimraf": "^3.0.0"
-  }
+    "name": "typescriptbrowser",
+    "version": "1.0.0",
+    "description": "run typescript code direct in browser with loaded typescript compiler in browser",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "npm install -g gulp-cli && gulp compress && gulp",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amitabh-anandcl/TypeScriptBrowser.git"
+    },
+    "keywords": [
+        "ts-browser"
+    ],
+    "author": "amitabh anand",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/amitabh-anandcl/TypeScriptBrowser/issues"
+    },
+    "homepage": "https://github.com/amitabh-anandcl/TypeScriptBrowser#readme",
+    "devDependencies": {
+        "eslint": "^6.5.1",
+        "gulp": "^4.0.2"
+    },
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "express": "^4.17.1",
+        "gulp-uglify": "^3.0.2",
+        "gulp-uglify-es": "^2.0.0",
+        "readable-stream": "^3.4.0",
+        "rimraf": "^3.0.0"
+    }
 }
