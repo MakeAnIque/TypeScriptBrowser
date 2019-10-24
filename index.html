@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- id you can choose you want -->
+        <div id="ts"></div>
+
+        <script type="text/javascript" src="/static/js/typescript.js"></script>
+        <script type="text/javascript" src="/static/js/static_file.js"></script>
+        <script type="text/javascript">
+            // this is function example and
+            window.onload = () => {
+                let url_config = {
+                    fetch_url: "/ts_static", // fetch url on express server all are post request
+                    ts_file: ["index.ts", "main.ts"], // filename in array for sequence loading file
+                    inject_id: "ts", // this is div id
+                    target: null // this null then automatically check browser js version like es6 , es5 if set to es6 or es5 it will compile only setted value
+                };
+                // now contruct the class loadscript with send object to it
+                let ts_now = new load_typescript(url_config);
+            };
+        </script>
+    </body>
+</html>

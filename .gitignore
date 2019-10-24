@@ -1,0 +1,11 @@
+#node module will installed according to your system
+node_modules
+
+# this is cutom ts file for test only not for productor you can create your own file ts and server over the server
+ts
+
+#build folder will build by you on dev so use gulp file
+build
+
+#not need to do that this is will compress by using gulp compress first time
+dist/js/typescript.js
